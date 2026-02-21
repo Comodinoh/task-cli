@@ -131,7 +131,7 @@ switch(cmd)
     case "list":
     {
         let tasks = get_tasks()
-        if(tasks == null) {
+        if(tasks == null || tasks.map.size == 0) {
             console.error("There is no task currently scheduled.")
             process.exit(1)
         }
@@ -165,7 +165,9 @@ switch(cmd)
                 process.exit(1)
             }
 
-            tasks.map.set(id, args[4])
+            let task = tasks.map.get(id)
+            task.description = args[4]
+            task.updatedAt = new Date()
 
             save_tasks(tasks)
 

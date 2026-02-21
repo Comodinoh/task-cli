@@ -1,12 +1,9 @@
 # task-cli
+Project on https://roadmap.sh/projects/task-tracker.
+This CLI app permits you to add, delete, and update tasks and list them formatted in a readable format.
+It uses a .json local file in the same directory to store your tasks.
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
+This app has no dependencies, to run:
 
 ```bash
 bun run index.ts

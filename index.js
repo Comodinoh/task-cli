@@ -2,8 +2,6 @@ import * as fs from "node:fs"
 
 const storage_file = './data.json'
 
-let GLOBAL_COUNTER = 0
-
 const args = process.argv
 
 const local_formatter = new Intl.DateTimeFormat('default', {
@@ -254,3 +252,4 @@ function print_help()
     
 }
 
+x
